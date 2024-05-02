@@ -1,10 +1,7 @@
-
-
-
 FROM node:latest
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR  /src
 
 # Copy the package.json and package-lock.json files
 COPY package*.json ./
