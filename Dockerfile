@@ -1,4 +1,5 @@
-FROM node:latest
+# Use an official Node.js runtime as the base image
+FROM public.ecr.aws/docker/library/node:slim AS build-stage
 
 # Set the working directory in the container
 WORKDIR  /src
