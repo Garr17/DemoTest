@@ -1,0 +1,17 @@
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:us-east-1:930907122605:task-definition/Demo_Test_Task_Def:4"
+        LoadBalancerInfo:
+          ContainerName: "DemoTest"
+          ContainerPort: 80
+# Optional properties
+        PlatformVersion: "LATEST"
+        NetworkConfiguration:
+            AwsvpcConfiguration:
+              Subnets: ["subnet-0408b6d7adce726e6", "subnet-049aa0fe47a3934f5","subnet-0c1f4e1735788a73f","subnet-09456b82c796eb4e6","subnet-06a590533e06dd66c","subnet-0d3799203491a13b7"]
+              SecurityGroups: ["sg-02604fbe940c7f2ec"]
+              AssignPublicIp: "ENABLED"
+Hooks:
