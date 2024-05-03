@@ -15,8 +15,13 @@ COPY . .
 # Build the React app for production
 RUN npm run build
 
-# Expose the port that your React app will run on
-EXPOSE 3000
+# Use a lightweight web server to serve the built app
+FROM public.ecr.aws/nginx/nginx:stable-perl
 
-# Start the React app when the container starts
-CMD [ "npm", "start" ]
+# Copy the built app from the previous stage to the nginx directory
+COPY --from=build-stage /app/build /usr/share/nginx/html
+
+EXPOSE 80
+
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]
