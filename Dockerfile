@@ -2,7 +2,7 @@
 FROM public.ecr.aws/docker/library/node:slim AS build-stage
 
 # Set the working directory in the container
-WORKDIR  /src
+WORKDIR  /app
 
 # Copy the package.json and package-lock.json files
 COPY package*.json ./
