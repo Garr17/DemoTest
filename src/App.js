@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Welcome to the ECR and CICD pipeline Demo!
+          Welcome to the ECR !
         </a>
       </header>
     </div>
