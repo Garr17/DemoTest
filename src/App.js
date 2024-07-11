@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Welcome to the CICD pipeline!
+          Welcome!
         </a>
       </header>
     </div>
