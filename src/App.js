@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Welcome to APIIT!
+          Welcome to Team C!
         </a>
       </header>
     </div>
