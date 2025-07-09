@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Welcome to Team virtusa and TTBD 
+          Welcome to  Virtusa
         </a>
       </header>
     </div>
