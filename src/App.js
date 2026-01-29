@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Welcome to  AWS !!!!!
+          Welcome to  CICD pipeline !!
         </a>
       </header>
     </div>
