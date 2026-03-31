@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Welcome to  CICD pipeline !!
+          Welcome to  AWS Session!! !!
         </a>
       </header>
     </div>
